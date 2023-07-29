@@ -1,1 +1,130 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    background-color: white; /* Bordoya yakın kırmızı renk */
+}
+  
+  .add-user-container {
+    width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Sayfayı sol üst köşeye hizala */
+  }
+  
+  .add-user-container div {
+    margin-bottom: 10px;
+  }
+  
+  .add-user-container label {
+    font-weight: bold;
+  }
+  
+  .add-user-container input[type="text"],
+  .add-user-container input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f7f7f7;
+  }
+  
+  .add-user-container .button {
+    background-color: #ccc;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .add-user-container .button:hover {
+    background-color: #999;
+  }
+  
+  .italic-bold {
+    font-style: italic;
+    font-weight: bold;
+  }
+  
+  /* Sol üst köşeye hizalama */
+  body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+  }
+  .app-user {
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .app-user th, .app-user td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .app-user th {
+    background-color: #B22222;
+    color: white;
+  }
+  
+  .app-user tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .delete-button {
+    background-color: #B22222;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .delete-button:hover {
+    background-color: #8b0000;
+  }
+  .app-update-user {
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .app-update-user form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .app-update-user label {
+    font-weight: bold;
+    font-style: italic;
+  }
+  
+  .app-update-user input {
+    padding: 6px 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .app-update-user button {
+    background-color: #B22222;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .app-update-user button:hover {
+    background-color: #8b0000;
+  }
+ 
+  
