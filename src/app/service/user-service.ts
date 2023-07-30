@@ -1,5 +1,5 @@
-import { UserCreateRequest } from "../dto/userCreateRequest";
-import { UserUpdateRequest } from "../dto/userUpdateRequest";
+import { UserCreateRequest } from "src/app/dto/UserCreateRequest";
+import { UserUpdateRequest } from 'src/app/dto/UserUpdateRequest';
 import { Injectable } from "@angular/core";
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { Observable } from 'rxjs';

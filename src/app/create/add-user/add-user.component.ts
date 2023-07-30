@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { UserService } from 'src/app/service/user-service';
-import { UserCreateRequest } from 'src/app/dto/userCreateRequest';
+import { UserCreateRequest } from 'src/app/dto/UserCreateRequest';
 
 
 

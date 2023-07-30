@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpParams } from '@angular/common/http';
-import { Observable, BehaviorSubject } from 'rxjs';
-import { PostUpdateRequest } from '../dto/postUpdateRequest';
-import { PostCreateRequest } from '../dto/postCreateRequest';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+import { PostUpdateRequest } from '../dto/PostUpdateRequest';
+import { PostCreateRequest } from '../dto/PostCreateRequest';
 
 @Injectable({
   providedIn: 'root'
@@ -22,12 +22,13 @@ export class PostService {
     return this.http.post<any>(`${this.apiUrl}/add`, post, {});
   }
 
-  updatePost(post: PostUpdateRequest) {
-    return this.http.put<any>(`${this.apiUrl}/update`, post, {});
+  updatePost(postId: number, post: PostUpdateRequest) {
+    return this.http.put<any>(`${this.apiUrl}/update/${postId}`, post, {});
   }
 
   deletePost(postId: number) {
     const url = `${this.apiUrl}/delete/${postId}`;
     return this.http.delete<any>(url);
   }
+ 
 }

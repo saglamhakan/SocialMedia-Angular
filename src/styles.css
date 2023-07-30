@@ -1,130 +1,133 @@
+/* Genel stil */
 body {
-    background-color: white; /* Bordoya yakın kırmızı renk */
+  background-color: #fafafa; /* Arka plan rengi */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
-  
-  .add-user-container {
-    width: 300px;
-    margin: 20px auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f7f7f7;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: left; /* Sayfayı sol üst köşeye hizala */
-  }
-  
-  .add-user-container div {
-    margin-bottom: 10px;
-  }
-  
-  .add-user-container label {
-    font-weight: bold;
-  }
-  
-  .add-user-container input[type="text"],
-  .add-user-container input[type="password"] {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    background-color: #f7f7f7;
-  }
-  
-  .add-user-container .button {
-    background-color: #ccc;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-weight: bold;
-  }
-  
-  .add-user-container .button:hover {
-    background-color: #999;
-  }
-  
-  .italic-bold {
-    font-style: italic;
-    font-weight: bold;
-  }
-  
-  /* Sol üst köşeye hizalama */
-  body, html {
-    height: 100%;
-    margin: 0;
-    display: flex;
-    justify-content: left;
-    align-items: left;
-  }
-  .app-user {
-    margin-top: 20px;
-    font-family: Arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-  }
-  
-  .app-user th, .app-user td {
-    border: 1px solid #dddddd;
-    padding: 8px;
-    text-align: left;
-  }
-  
-  .app-user th {
-    background-color: #B22222;
-    color: white;
-  }
-  
-  .app-user tr:nth-child(even) {
-    background-color: #f2f2f2;
-  }
-  
-  .delete-button {
-    background-color: #B22222;
-    color: white;
-    border: none;
-    padding: 8px 16px;
-    cursor: pointer;
-    border-radius: 4px;
-  }
-  
-  .delete-button:hover {
-    background-color: #8b0000;
-  }
-  .app-update-user {
-    margin-top: 20px;
-    font-family: Arial, sans-serif;
-  }
-  
-  .app-update-user form {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  
-  .app-update-user label {
-    font-weight: bold;
-    font-style: italic;
-  }
-  
-  .app-update-user input {
-    padding: 6px 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  .app-update-user button {
-    background-color: #B22222;
-    color: white;
-    border: none;
-    padding: 8px 16px;
-    cursor: pointer;
-    border-radius: 4px;
-  }
-  
-  .app-update-user button:hover {
-    background-color: #8b0000;
-  }
- 
-  
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Tablo stil */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+/* Form stil */
+form {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #3897f0; /* Instagram mavisi */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Delete düğmesi stil */
+.delete-button {
+  background-color: #f00; /* Kırmızı renk */
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* Uygulama stilleri */
+.app-post, .app-user, .app-like, .app-comment {
+  margin-bottom: 40px;
+}
+
+.app-post th, .app-post td, .app-user th, .app-user td, .app-like th, .app-like td, .app-comment th, .app-comment td {
+  text-align: center;
+}
+
+.app-post th, .app-user th, .app-like th, .app-comment th {
+  background-color: #fafafa; /* Açık gri renk */
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.app-user th, .app-user td {
+  background-color: #f0f0f0; /* Daha açık gri renk */
+}
+
+.app-like th, .app-like td {
+  background-color: #e0e0e0; /* Daha daha açık gri renk */
+}
+
+.app-comment th, .app-comment td {
+  background-color: #d0d0d0; /* Daha daha daha açık gri renk */
+}
+
+/* Instagram benzeri stiller */
+.add-user-container, .add-post, .add-like, .add-comment {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #fff; /* Beyaz arka plan */
+}
+
+.add-user-container label, .add-post label, .add-like label, .add-comment label {
+  font-weight: bold;
+}
+
+.add-user-container input, .add-post input, .add-like input, .add-comment input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.add-user-container button, .add-post button, .add-like button, .add-comment button {
+  background-color: #3897f0; /* Instagram mavisi */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Instagram benzeri delete düğmesi stilleri */
+.delete-button {
+  background-color: #f00; /* Kırmızı renk */
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}

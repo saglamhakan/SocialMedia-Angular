@@ -1,14 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { UserService } from 'src/app/service/user-service';
-import { UserUpdateRequest } from 'src/app/dto/userUpdateRequest';
+import { UserUpdateRequest } from 'src/app/dto/UserUpdateRequest';
 
 @Component({
   selector: 'app-update-user',
   templateUrl: './update-user.component.html',
   styleUrls: ['./update-user.component.css']
 })
-export class UpdateUserComponent {
+export class UpdateUserComponent implements OnInit{
   updateUserForm!: FormGroup;
 
   constructor(private formBuilder: FormBuilder, private userService: UserService) { }

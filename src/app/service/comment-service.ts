@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http'
 import { Observable } from 'rxjs';
-import { CommentCreateRequest } from '../dto/commentCreateRequest';
-import { CommentUpdateRequest } from '../dto/commentUpdateRequest';
+import { CommentCreateRequest } from '../dto/CommentCreateRequest';
+import { CommentUpdateRequest } from '../dto/CommentUpdateRequest';
 
 
 @Injectable({
@@ -22,11 +22,11 @@ export class CommentService {
   addComment(comment:CommentCreateRequest){
     return this.http.post<any>(this.apiUrl + "/add", comment, {})
   }
-  updateComment(comment:CommentUpdateRequest){
-    return this.http.put<any> (this.apiUrl + "/update", comment, {})
+  updateComment(id: number, comment: CommentUpdateRequest) {
+    return this.http.put<any>(`${this.apiUrl}/update/${id}`, comment, {});
   }
-  deleteComment(commentId:number){
-    const url = `${this.apiUrl}/delete/${commentId}`;
+  deleteComment(id:number){
+    const url = `${this.apiUrl}/delete/${id}`;
     return this.http.delete<any> (url)
   }
   } 
